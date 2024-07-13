@@ -1,0 +1,17 @@
+{
+  "name": "kafka",
+  "version": "1.0.0",
+  "description": "1. event streaming platform 2. producer -> kafka -> consumers 3. kafka is simmilar to redis, stores the events 4. when backend downs it takes unfilled events from kafka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "produce": "tsc -b && node dist/producer.js",
+    "consume": "tsc -b && node dist/consumer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
